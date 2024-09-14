@@ -1,0 +1,30 @@
+/* src/pages/ProfilePage/ProfilePage.css */
+.profile-page {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .profile-page h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .error-message {
+    color: red;
+    text-align: center;
+  }
+  
+  .purchase-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .purchase-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+  }
+  

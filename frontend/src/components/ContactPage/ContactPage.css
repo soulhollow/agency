@@ -1,0 +1,131 @@
+/* src/components/ContactPage/ContactPage.css */
+.contact-page {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* src/components/ContactPage/ContactFormSection.css */
+  .contact-form-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .contact-form-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form label {
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    font-size: 1em;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .contact-form textarea {
+    height: 150px;
+    resize: vertical;
+  }
+  
+  .submit-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    align-self: flex-start;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* src/components/ContactPage/LocationInfoSection.css */
+  .location-info-section {
+    padding: 50px 20px;
+  }
+  
+  .location-info-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .address-block p {
+    margin: 5px 0;
+    font-size: 1.1em;
+  }
+  
+  .map-embed {
+    margin-top: 20px;
+  }
+  
+  /* src/components/ContactPage/SocialMediaSection.css */
+  .social-media-section {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .social-media-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .social-media-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .social-media-icons img {
+    height: 40px;
+  }
+  
+  /* src/components/ContactPage/FAQSection.css */
+  .faq-section {
+    padding: 50px 20px;
+  }
+  
+  .faq-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .faq-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .faq-item p {
+    font-size: 1.1em;
+    margin: 0;
+  }
+  /* Status-Nachricht in grüner Schrift bei Erfolg */
+.status-message {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}
+  
