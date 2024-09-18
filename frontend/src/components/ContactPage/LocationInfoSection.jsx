@@ -5,16 +5,16 @@ import './ContactPage.css';
 function LocationInfoSection() {
   return (
     <section className="location-info-section">
-      <h2>Our Location</h2>
+      <h2>Unser Standort</h2>
       <div className="address-block">
-        <p>123 AI Street</p>
-        <p>Tech City, TC 45678</p>
-        <p>Phone: +1 234 567 890</p>
-        <p>Email: contact@aicompany.com</p>
+        <p>Paulinenstraße 50</p>
+        <p>70178, Stuttgart</p>
+        <p>Phone: +49 711 320 660 - 0</p>
+        <p>Email: info@dhbw-stuttgart.de</p>
       </div>
       <div className="map-embed">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509412!2d144.95565131548283!3d-37.81720984202179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f4ab0b77%3A0x5045675218ce7e33!2z44CSMzAwMCBTYW4gRnJhbmNpc2NvLCBDQSwg77yI5p2J77yJ!5e0!3m2!1sen!2sus!4v1635301492857!5m2!1sen!2sus"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d328.6807850250151!2d9.170493853704725!3d48.77336969123125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4799dbb3d78fef99%3A0x31d0d5a752c2215!2sDHBW%20Stuttgart%20-%20Fakult%C3%A4t%20Wirtschaft!5e0!3m2!1sde!2sde!4v1726476046769!5m2!1sde!2sde"
           width="600"
           height="450"
           style={{ border: 0 }}

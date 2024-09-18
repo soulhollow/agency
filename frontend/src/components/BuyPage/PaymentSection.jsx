@@ -5,26 +5,27 @@ import './BuyPage.css';
 function PaymentSection() {
   return (
     <section className="payment-section">
-      <h2>Complete Your Purchase</h2>
+      <h2>Kauf abschließen</h2>
       <form className="payment-form">
         <label>
-          Name on Card:
-          <input type="text" name="name" placeholder="Your Name" required />
+          Kartenname:
+          <input type="text" name="name" placeholder="Dein Name" required />
         </label>
         <label>
-          Card Number:
-          <input type="text" name="cardnumber" placeholder="Card Number" required />
+          Kartennummer:
+          <input type="text" name="cardnumber" placeholder="Deine Nummer" required />
         </label>
         <label>
-          Expiration Date:
-          <input type="text" name="expiration" placeholder="MM/YY" required />
+          Ablaufdatum:
+          <input type="text" name="expiration" placeholder="MM/JJ" required />
         </label>
         <label>
           CVC:
           <input type="text" name="cvc" placeholder="CVC" required />
         </label>
-        <button type="submit" className="submit-button">Buy Now</button>
+        
       </form>
+      <button type="submit" className="submit-button">Jetzt kaufen</button>
     </section>
   );
 }

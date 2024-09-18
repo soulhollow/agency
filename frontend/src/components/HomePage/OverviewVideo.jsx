@@ -5,7 +5,7 @@ import './HomePage.css';
 function OverviewVideo() {
   return (
     <section className="overview-video">
-      <h2>See Our AI Agent in Action</h2>
+      <h2>Ein kleiner Einblick in unsere Abeit</h2>
       <div className="video-container">
         <iframe 
           width="560" 
@@ -17,7 +17,7 @@ function OverviewVideo() {
           allowFullScreen>
         </iframe>
       </div>
-      <p>Learn how our AI agent can revolutionize your business operations.</p>
+      <p>Erfahre mehr in einem kostenlosen Beratungsgespräch!</p>
     </section>
   );
 }

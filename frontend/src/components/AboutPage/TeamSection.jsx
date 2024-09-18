@@ -5,19 +5,27 @@ import './AboutPage.css';
 function TeamSection() {
   return (
     <section className="team-section">
-      <h2>Meet the Team</h2>
+      <h2>Unser Team</h2>
       <div className="team-grid">
         <div className="team-member">
-          <img src="/path-to-photo.jpg" alt="Alexander Ruffner" />
-          <h3>Alexander Ruffner</h3>
-          <p>Lead AI Manager</p>
-          <p>Alexander is good ... ... bla blöa bla balo b akbkbadkbd iid  </p>
+          <h3>Simon Fischer</h3>
+          <p>Head of Social Media Stragety</p>
+          <p>Simon ist verantwortlich für die Entwicklung und Umsetzung unserer umfassenden Social Media Strategien. Er analysiert Markttrends und Zielgruppen, um maßgeschneiderte Kampagnen zu kreieren, die optimal performen und den Wachstumskurs unserer Kunden unterstützen.</p>
         </div>
         <div className="team-member">
-          <img src="/path-to-photo.jpg" alt="Florian Ruffner" />
           <h3>Florian Ruffner</h3>
-          <p>Big Titel</p>
-          <p>Florian is bla . ... bla blöa bla balo b akbkbad</p>
+          <p>Crative Content Manager</p>
+          <p>Florian sorgt für die kreative Gestaltung und Umsetzung von Inhalten. Er entwickelt einzigartige Posts, Stories und Videos, die genau die richtigen Emotionen wecken und die Marken unserer Kunden authentisch präsentieren.</p>
+        </div>
+        <div className="team-member">
+          <h3>Melia Alexander</h3>
+          <p>Community Engagement Specialist</p>
+          <p>Melia kümmert sich um die Interaktion mit den Zielgruppen. Sie ist die Stimme unserer Kunden auf den sozialen Netzwerken, beantwortet Kommentare, moderiert Diskussionen und sorgt für ein starkes Community-Engagement.</p>
+        </div>
+        <div className="team-member">
+          <h3>Franziska Schöning</h3>
+          <p>Performance Marketing Analyst</p>
+          <p>Franziska ist für das Monitoring und die Analyse der Kampagnen-Performance zuständig. Sie trackt die wichtigsten KPIs und sorgt dafür, dass alle Strategien datenbasiert optimiert werden, um den maximalen Erfolg zu erzielen.</p>
         </div>
         {/* Add more team members as needed */}
       </div>

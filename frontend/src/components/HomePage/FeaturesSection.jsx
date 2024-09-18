@@ -8,19 +8,19 @@ function FeaturesSection() {
       <h2>Key Features</h2>
       <div className="features-grid">
         <div className="feature-card">
-          <img src="/path-to-icon1.png" alt="Feature 1" />
-          <h3>Automation</h3>
-          <p>Automate your tasks effortlessly.</p>
+          <img src="../../../pictures/Flexibel.png" alt="Flexibel"/>
+          <h3>Flexibel</h3>
+          <p>Bei MediaFlow sind Sie vollkommen flexibel: Passen Sie Ihren Tarif jederzeit an - ganz nach ihren individuellen Bedürfnissen.</p>
         </div>
         <div className="feature-card">
-          <img src="/path-to-icon2.png" alt="Feature 2" />
-          <h3>Scalability</h3>
-          <p>Easily scale with your business needs.</p>
+          <img src="Individuell.jpg" alt="Individuell" />
+          <h3>Individuell</h3>
+          <p>MediaFlow richtet sich exakt nach Ihren Anforderungen - maßgeschneidert auf Ihr Unternehmen und spezifischen Zielen.</p>
         </div>
         <div className="feature-card">
-          <img src="/path-to-icon3.png" alt="Feature 3" />
-          <h3>24/7 Support</h3>
-          <p>Get support whenever you need it.</p>
+          <img src="Effektiv.jpg" alt="Effektiv" />
+          <h3>Effektiv</h3>
+          <p>Mit MediaFlow arbeiten Sie effizient und zielgerichtet. Dank unseres Fachwissens sind unsere Strategien so optimiert, dass Sie Ihre Ziele möglich schnell und effektiv erreichen.</p>
         </div>
       </div>
     </section>

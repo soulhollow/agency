@@ -87,6 +87,7 @@
   /* src/components/AboutPage/TeamSection.css */
   .team-section {
     padding: 50px 20px;
+    text-align: center;
   }
   
   .team-section h2 {

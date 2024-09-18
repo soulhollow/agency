@@ -4,9 +4,8 @@ import './Header.css';  // Ensure consistent styling
 function Logo() {
   return (
     <div className="logo">
-      <img src="/path-to-your-logo.png" alt="AI Agent Logo" />
+      <img src="/../../../pictures/Logo.jpeg" alt="MediaFlow" />
     </div>
   );
 }
-
 export default Logo;

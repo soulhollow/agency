@@ -27,7 +27,7 @@ function Footer() {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+        <p>&copy; 2024 MediaFlow. All rights reserved.</p>
       </div>
     </footer>
   );

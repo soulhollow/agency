@@ -5,7 +5,7 @@ import './BuyPage.css';
 function FeaturesComparisonSection() {
   return (
     <section className="features-comparison-section">
-      <h2>Compare Features</h2>
+      <h2>Features vergleichen</h2>
       <table className="comparison-table">
         <thead>
           <tr>
@@ -17,19 +17,25 @@ function FeaturesComparisonSection() {
         </thead>
         <tbody>
           <tr>
-            <td>Automation</td>
+            <td>Zeitplanung</td>
             <td>✔️</td>
             <td>✔️</td>
             <td>✔️</td>
           </tr>
           <tr>
-            <td>Scalability</td>
+            <td>Content-Planung</td>
+            <td>✔️</td>
+            <td>✔️</td>
+            <td>✔️</td>
+          </tr>
+          <tr>
+            <td>Performance-Tracking & Analyse</td>
             <td>❌</td>
             <td>✔️</td>
             <td>✔️</td>
           </tr>
           <tr>
-            <td>24/7 Support</td>
+            <td>24/7 Beratung</td>
             <td>❌</td>
             <td>❌</td>
             <td>✔️</td>

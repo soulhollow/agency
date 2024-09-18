@@ -1,7 +1,7 @@
 /* src/components/Footer/Footer.css */
 .footer {
-    background-color: #343a40;
-    color: #fff;
+    background-color: #FFCC00;
+    color: #000;
     padding: 20px 0;
     text-align: center;
   }
@@ -28,7 +28,7 @@
   }
   
   .footer-nav ul li a {
-    color: #fff;
+    color: #000;
     text-decoration: none;
     font-weight: bold;
   }
@@ -50,7 +50,7 @@
   }
   
   .footer-bottom {
-    border-top: 1px solid #495057;
+    border-top: 1px solid #FFCC00;
     padding-top: 10px;
     margin-top: 20px;
     font-size: 0.9em;

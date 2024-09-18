@@ -42,28 +42,28 @@ function ContactFormSection() {
 
   return (
     <section className="contact-form-section">
-      <h2>Contact Us</h2>
+      <h2>Kontaktiere uns</h2>
       {/* Status-Nachricht anzeigen */}
       {statusMessage && <p className="status-message">{statusMessage}</p>}
       
       <form className="contact-form" onSubmit={handleSubmit}>
         <label>
           Name:
-          <input type="text" name="name" placeholder="Your Name" required value={formData.name} onChange={handleChange} />
+          <input type="text" name="name" placeholder="Dein Name" required value={formData.name} onChange={handleChange} />
         </label>
         <label>
           Email:
-          <input type="email" name="email" placeholder="Your Email" required value={formData.email} onChange={handleChange} />
+          <input type="email" name="email" placeholder="Deine Email" required value={formData.email} onChange={handleChange} />
         </label>
         <label>
-          Subject:
-          <input type="text" name="subject" placeholder="Subject" value={formData.subject} onChange={handleChange} />
+          Betreff:
+          <input type="text" name="subject" placeholder="Betreff" value={formData.subject} onChange={handleChange} />
         </label>
         <label>
-          Message:
-          <textarea name="message" placeholder="Your Message" required value={formData.message} onChange={handleChange}></textarea>
+          Nachricht:
+          <textarea name="message" placeholder="Deine Nachricht" required value={formData.message} onChange={handleChange}></textarea>
         </label>
-        <button type="submit" className="submit-button">Send Message</button>
+        <button type="submit" className="submit-button">Nachricht senden</button>
       </form>
     </section>
   );

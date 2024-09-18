@@ -13,6 +13,7 @@
     justify-content: space-between;
     padding: 50px 20px;
     background-color: #f0f4f8;
+    justify-content: center;
   }
   
   .hero-content {
@@ -22,13 +23,25 @@
   .hero-content h1 {
     font-size: 3em;
     margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .hero-content h2 {
+    text-align: center;
   }
   
   .hero-content p {
     font-size: 1.2em;
     margin-bottom: 20px;
+    text-align: center;
   }
   
+  .services {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
   .cta-button {
     display: inline-block;
     padding: 10px 20px;
@@ -36,6 +49,10 @@
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-left: 230px;
   }
   
   .cta-button:hover {
@@ -44,6 +61,14 @@
   
   .hero-image {
     max-width: 400px;
+  }
+
+  .service-list {
+    text-align: left;
+  }
+
+  .service-list li {
+    font-size: 1.2em;
   }
   
   /* src/components/HomePage/FeaturesSection.css */
