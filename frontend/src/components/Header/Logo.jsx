@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css';  // Ensure consistent styling
-import logo from'./Logo.jpeg';
+import logo from'./Logo_MF.jpeg';
 
 function Logo() {
   return (
