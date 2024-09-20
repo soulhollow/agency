@@ -93,7 +93,7 @@
   }
   
   .feature-card img {
-    height: 50px;
+    height: 200px;
     margin-bottom: 20px;
   }
   
@@ -107,23 +107,32 @@
   }
   
   /* src/components/HomePage/OverviewVideo.css */
-  .overview-video {
+  .overview-img {
     text-align: center;
     padding: 50px 20px;
   }
   
-  .overview-video h2 {
+  .overview-img h2 {
     font-size: 2.5em;
     margin-bottom: 40px;
   }
   
-  .video-container {
+  .img-grid {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .img-container {
     max-width: 100%;
     margin: 0 auto;
   }
+
+  .img-container img {
+    height: 500px;
+    margin-bottom: 20px;
+  }
   
-  .overview-video p {
+  .overview-img p {
     font-size: 1.2em;
     margin-top: 20px;
   }
-  

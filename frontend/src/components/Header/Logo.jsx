@@ -1,10 +1,12 @@
 import React from 'react';
 import './Header.css';  // Ensure consistent styling
+import logo from'./Logo.jpeg';
 
 function Logo() {
   return (
     <div className="logo">
-      <img src="/../../../pictures/Logo.jpeg" alt="MediaFlow" />
+
+      <img src={logo} />
     </div>
   );
 }
