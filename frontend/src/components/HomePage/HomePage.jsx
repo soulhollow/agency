@@ -3,14 +3,14 @@ import React from 'react';
 import './HomePage.css';
 import HeroSection from './HeroSection';
 import FeaturesSection from './FeaturesSection';
-import OverviewVideo from './OverviewVideo';
+import OverviewImages from './OverviewImages';
 
 function HomePage() {
   return (
     <div className="homepage">
       <HeroSection />
       <FeaturesSection />
-      <OverviewVideo />
+      <OverviewImages />
     </div>
   );
 }
