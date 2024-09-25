@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './BuyPage.css';
-import apiService from '../../services/ApiService'; // Passen Sie den Pfad an
+import ApiService from '../../context/ApiService.jsx';  // Importiere den ApiService
 
 function ProductOptionsSection() {
   const [products, setProducts] = useState([]);
@@ -8,7 +8,7 @@ function ProductOptionsSection() {
   const [error, setError] = useState(null); // Fehlerzustand
 
   useEffect(() => {
-    apiService.getAllProducts()
+    ApiService.getAllProducts()
       .then(response => {
         setProducts(response.data);
         setLoading(false);
