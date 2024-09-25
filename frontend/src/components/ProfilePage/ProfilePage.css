@@ -1,30 +1,63 @@
-/* src/pages/ProfilePage/ProfilePage.css */
+/* ProfilePage.css */
+
 .profile-page {
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .profile-page h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .error-message {
-    color: red;
-    text-align: center;
-  }
-  
-  .purchase-list {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .purchase-item {
-    border: 1px solid #ddd;
-    padding: 15px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    background-color: #f9f9f9;
-  }
-  
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.message {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.purchases-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  padding: 15px;
+}
+
+.card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-id {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.product-name,
+.quantity,
+.price,
+.status {
+  font-size: 0.95rem;
+  margin-bottom: 5px;
+  color: #555;
+}
