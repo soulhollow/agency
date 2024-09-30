@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, {useContext} from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header/Header';
 import HomePage from './components/HomePage/HomePage';
@@ -12,24 +12,32 @@ import ProfilePage from './components/ProfilePage/ProfilePage';
 import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute';
 import Footer from './components/Footer/Footer';
 import CheckoutPage from "./components/CheckoutPage/CheckoutPage";
+import AuthContext from "./context/AuthContext";
 
 function App() {
-  return (
-    <Router>
-      <Header />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/buy" element={<BuyPage />} />
-        <Route path="/contact" element={<ContactPage />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<RegisterPage />} />
-          <Route path="/checkout/:productId" element={<CheckoutPage />} />
-        <Route path="/profile"  element={<ProtectedRoute element={<ProfilePage />} />}/>
-      </Routes>
-      <Footer />
-    </Router>
-  );
+    return (
+        <Router>
+            <Header />
+            <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/about" element={<AboutPage />} />
+                <Route path="/buy" element={<BuyPage />} />
+                <Route path="/contact" element={<ContactPage />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/register" element={<RegisterPage />} />
+                <Route path="/checkout/:productId" element={<CheckoutPage />} />
+                <Route
+                    path="/profile"
+                    element={
+                        <ProtectedRoute>
+                            <ProfilePage />
+                        </ProtectedRoute>
+                    }
+                />
+            </Routes>
+            <Footer />
+        </Router>
+    );
 }
 
 export default App;

@@ -4,7 +4,7 @@ import './BuyPage.css';
 import ProductOptionsSection from './ProductOptionsSection';
 import FeaturesComparisonSection from './FeaturesComparisonSection';
 import CustomerReviewsSection from './CustomerReviewsSection';
-import PaymentSection from './PaymentSection';
+
 
 function BuyPage() {
   return (
@@ -12,7 +12,6 @@ function BuyPage() {
       <ProductOptionsSection />
       <FeaturesComparisonSection />
       <CustomerReviewsSection />
-      <PaymentSection />
     </div>
   );
 }

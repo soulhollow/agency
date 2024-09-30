@@ -4,12 +4,12 @@ import App from './App';
 import { AuthProvider } from './context/AuthContext';
 
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
 
+const root = ReactDOM.createRoot(document.getElementById('root')); // Erstelle ein Root-Element
 
 root.render(
     <React.StrictMode>
-        <AuthProvider>
+        <AuthProvider> {/* Umschließe die App mit AuthProvider */}
             <App />
         </AuthProvider>
     </React.StrictMode>

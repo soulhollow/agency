@@ -1,4 +1,6 @@
+// src/context/AuthContext.js
 import React, { createContext, useState, useEffect } from 'react';
+import Cookies from 'js-cookie';
 
 const AuthContext = createContext();
 
@@ -6,29 +8,34 @@ export const AuthProvider = ({ children }) => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   useEffect(() => {
-    // Token in eine Variable extrahieren
-    const token = localStorage.getItem('token');
+    // Token aus den Cookies abrufen
+    const token = Cookies.get('token');
+    console.log('Initialer Token aus Cookie:', token);
     if (token) {
       setIsAuthenticated(true);
     } else {
       setIsAuthenticated(false);
     }
-  }, []);  // Leere Abhängigkeit sorgt dafür, dass es nur einmal beim Mount ausgeführt wird
+  }, []);
 
   const login = (token) => {
-    localStorage.setItem('token', token);
+    console.log('Login mit Token:', token);
+    // Setze das Token in den Cookies, z.B. für 7 Tage
+    Cookies.set('token', token, { expires: 7 });
     setIsAuthenticated(true);
   };
 
   const logout = () => {
-    localStorage.removeItem('token');
+    console.log('Logout');
+    // Entferne das Token aus den Cookies
+    Cookies.remove('token');
     setIsAuthenticated(false);
   };
 
   return (
-    <AuthContext.Provider value={{ isAuthenticated, login, logout }}>
-      {children}
-    </AuthContext.Provider>
+      <AuthContext.Provider value={{ isAuthenticated, login, logout }}>
+        {children}
+      </AuthContext.Provider>
   );
 };
 
