@@ -31,10 +31,6 @@ function TeamSection() {
           <p>Performance Marketing Analyst</p>
           <p>Franziska ist für das Monitoring und die Analyse der Kampagnen-Performance zuständig. Sie trackt die wichtigsten KPIs und sorgt dafür, dass alle Strategien datenbasiert optimiert werden, um den maximalen Erfolg zu erzielen.</p>
         </div>
-        <div className='team-member'>
-          <p></p>
-        </div>
-        {/* Add more team members as needed */}
       </div>
     </section>
   );

@@ -1,4 +1,6 @@
 /* src/pages/RegisterPage/RegisterPage.css */
+
+/* Allgemeine Stile für RegisterPage */
 .register-page {
   display: flex;
   justify-content: center;
@@ -7,6 +9,7 @@
   background-color: #f0f4f8;
   padding: 20px;
   box-sizing: border-box;
+  font-family: 'Arial, sans-serif';
 }
 
 .register-form {
@@ -23,12 +26,14 @@
   margin-bottom: 20px;
   text-align: center;
   font-size: 2em;
+  color: #003366;
 }
 
 .register-form label {
   display: block;
   margin-bottom: 10px;
   font-weight: bold;
+  color: #555;
 }
 
 .register-form input {
@@ -50,6 +55,7 @@
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-size: 1em;
 }
 
 .register-button:hover {

@@ -1,4 +1,6 @@
 /* src/pages/LoginPage/LoginPage.css */
+
+/* Allgemeine Stile für LoginPage */
 .login-page {
   display: flex;
   justify-content: center;
@@ -7,6 +9,7 @@
   background-color: #f0f4f8;
   padding: 20px;
   box-sizing: border-box;
+  font-family: 'Arial, sans-serif';
 }
 
 .login-form {
@@ -23,12 +26,14 @@
   margin-bottom: 20px;
   text-align: center;
   font-size: 2em;
+  color: #003366;
 }
 
 .login-form label {
   display: block;
   margin-bottom: 10px;
   font-weight: bold;
+  color: #555;
 }
 
 .login-form input {
@@ -50,6 +55,7 @@
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-size: 1em;
 }
 
 .login-button:hover {
@@ -76,6 +82,10 @@
 }
 
 @media (max-width: 480px) {
+  .login-page {
+    padding: 10px;
+  }
+
   .login-form {
     padding: 20px;
     max-width: 100%;
@@ -88,5 +98,9 @@
   .login-button {
     padding: 8px;
     font-size: 0.9em;
+  }
+
+  .error-message {
+    font-size: 0.8em;
   }
 }

@@ -1,4 +1,6 @@
 /* src/components/Header/Header.css */
+
+/* Allgemeine Stile für Header */
 .header {
   display: flex;
   justify-content: space-between;
@@ -7,6 +9,7 @@
   background-color: #f8f9fa;
   border-bottom: 1px solid #e0e0e0;
   box-sizing: border-box;
+  font-family: 'Arial, sans-serif';
 }
 
 .header-content {
@@ -51,6 +54,34 @@
   gap: 20px;
 }
 
+.auth-links a,
+.auth-links button {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  padding: 8px 16px;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.auth-links a:hover,
+.auth-links button:hover {
+  color: #fff;
+  background-color: #007bff;
+  border: 1px solid #007bff;
+}
+
+/* Spezifische Stile für Logout-Button */
+.auth-links button {
+  /* Entfernt den Standard-Button-Stil */
+  border: none;
+  background: none;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   .header-content {
@@ -63,6 +94,12 @@
 
   .logo img {
     height: 60px;
+  }
+
+  .auth-links a,
+  .auth-links button {
+    padding: 6px 12px;
+    font-size: 0.9em;
   }
 }
 
@@ -90,5 +127,11 @@
 
   .logo img {
     height: 50px;
+  }
+
+  .auth-links a,
+  .auth-links button {
+    padding: 6px 12px;
+    font-size: 0.8em;
   }
 }

@@ -1,43 +1,41 @@
 /* src/components/ContactPage/ContactPage.css */
+
+/* Allgemeine Stile für ContactPage */
 .contact-page {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
   box-sizing: border-box;
+  font-family: 'Arial, sans-serif';
+  color: #333;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .contact-page {
-    padding: 15px;
-  }
-}
-
-@media (max-width: 480px) {
-  .contact-page {
-    padding: 10px;
-  }
-}
-/* src/components/ContactPage/ContactFormSection.css */
+/* Contact Form Section */
 .contact-form-section {
   padding: 50px 20px;
   background-color: #f9f9f9;
+  text-align: center;
 }
 
 .contact-form-section h2 {
   font-size: 2.5em;
   margin-bottom: 20px;
+  color: #003366;
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
 }
 
 .contact-form label {
   font-weight: bold;
+  color: #555;
 }
 
 .contact-form input,
@@ -78,66 +76,37 @@
   margin-top: 10px;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .contact-form-section h2 {
-    font-size: 2em;
-  }
-}
-
-@media (max-width: 480px) {
-  .contact-form-section {
-    padding: 30px 10px;
-  }
-
-  .contact-form-section h2 {
-    font-size: 1.5em;
-  }
-}
-/* src/components/ContactPage/LocationInfoSection.css */
+/* Location Info Section */
 .location-info-section {
   padding: 50px 20px;
+  text-align: center;
 }
 
 .location-info-section h2 {
   font-size: 2.5em;
   margin-bottom: 20px;
+  color: #003366;
 }
 
 .address-block p {
   margin: 5px 0;
   font-size: 1.1em;
+  color: #555;
 }
 
 .map-embed {
   margin-top: 20px;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .location-info-section h2 {
-    font-size: 2em;
-  }
-
-  .address-block p {
-    font-size: 1em;
-  }
+.map-embed iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-@media (max-width: 480px) {
-  .location-info-section {
-    padding: 30px 10px;
-  }
-
-  .location-info-section h2 {
-    font-size: 1.5em;
-  }
-
-  .address-block p {
-    font-size: 0.9em;
-  }
-}
-/* src/components/ContactPage/SocialMediaSection.css */
+/* Social Media Section */
 .social-media-section {
   padding: 50px 20px;
   text-align: center;
@@ -146,23 +115,75 @@
 .social-media-section h2 {
   font-size: 2.5em;
   margin-bottom: 20px;
+  color: #003366;
 }
 
 .social-media-icons {
   display: flex;
   justify-content: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .social-media-icons img {
   height: 40px;
   width: 40px;
+  transition: transform 0.3s ease;
+}
+
+.social-media-icons img:hover {
+  transform: scale(1.1);
+}
+
+/* FAQ Section */
+.faq-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.faq-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #003366;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.faq-item h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #003366;
+}
+
+.faq-item p {
+  font-size: 1.1em;
+  color: #555;
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-  .social-media-section h2 {
+  .contact-form-section h2,
+  .location-info-section h2,
+  .social-media-section h2,
+  .faq-section h2 {
     font-size: 2em;
+  }
+
+  .contact-form {
+    max-width: 500px;
+  }
+
+  .address-block p,
+  .contact-form label,
+  .faq-item p {
+    font-size: 1em;
   }
 
   .social-media-icons img {
@@ -172,71 +193,39 @@
 }
 
 @media (max-width: 480px) {
-  .social-media-section {
+  .contact-page {
+    padding: 10px;
+  }
+
+  .contact-form-section,
+  .location-info-section,
+  .social-media-section,
+  .faq-section {
     padding: 30px 10px;
   }
 
-  .social-media-section h2 {
+  .contact-form-section h2,
+  .location-info-section h2,
+  .social-media-section h2,
+  .faq-section h2 {
     font-size: 1.5em;
   }
 
-  .social-media-icons {
-    gap: 15px;
+  .contact-form {
+    max-width: 100%;
+  }
+
+  .map-embed iframe {
+    height: 200px;
   }
 
   .social-media-icons img {
     height: 30px;
     width: 30px;
   }
-}
-/* src/components/ContactPage/FAQSection.css */
-.faq-section {
-  padding: 50px 20px;
-}
 
-.faq-section h2 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-}
-
-.faq-list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.faq-item h3 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-}
-
-.faq-item p {
-  font-size: 1.1em;
-  margin: 0;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .faq-section h2 {
-    font-size: 2em;
-  }
-
-  .faq-item h3 {
-    font-size: 1.3em;
-  }
-
-  .faq-item p {
-    font-size: 1em;
-  }
-}
-
-@media (max-width: 480px) {
-  .faq-section {
-    padding: 30px 10px;
-  }
-
-  .faq-section h2 {
-    font-size: 1.5em;
+  .faq-list {
+    padding: 0 10px;
   }
 
   .faq-item h3 {
