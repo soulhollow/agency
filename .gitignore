@@ -34,3 +34,5 @@ coverage/
 *.lock
 package-lock.json
 package.json
+/frontend/node_modules/
+/node_modules/
