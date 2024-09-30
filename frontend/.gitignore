@@ -32,3 +32,5 @@ Thumbs.db
 # Sonstige
 coverage/
 *.lock
+package-lock.json
+package.json
