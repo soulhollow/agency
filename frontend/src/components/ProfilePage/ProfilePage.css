@@ -1,9 +1,9 @@
-/* ProfilePage.css */
-
+/* src/components/ProfilePage/ProfilePage.css */
 .profile-page {
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .title {
@@ -28,6 +28,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 20px;
+  margin-top: 20px;
 }
 
 .card {
@@ -36,6 +37,7 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
   padding: 15px;
+  box-sizing: border-box;
 }
 
 .card:hover {
@@ -60,4 +62,63 @@
   font-size: 0.95rem;
   margin-bottom: 5px;
   color: #555;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .message {
+    font-size: 1em;
+  }
+
+  .purchases-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+
+  .card {
+    padding: 12px;
+  }
+
+  .order-id {
+    font-size: 1rem;
+  }
+
+  .product-name,
+  .quantity,
+  .price,
+  .status {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .message {
+    font-size: 0.9rem;
+  }
+
+  .purchases-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 10px;
+  }
+
+  .order-id {
+    font-size: 0.95rem;
+  }
+
+  .product-name,
+  .quantity,
+  .price,
+  .status {
+    font-size: 0.85rem;
+  }
 }

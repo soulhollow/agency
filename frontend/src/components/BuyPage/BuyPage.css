@@ -1,188 +1,255 @@
 /* src/components/BuyPage/BuyPage.css */
 .buy-page {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  /* src/components/BuyPage/ProductOptionsSection.css */
-  .product-options-section {
-    padding: 50px 20px;
-    text-align: center;
-  }
-  
-  .product-options-section h2 {
-    font-size: 2.5em;
-    margin-bottom: 40px;
-  }
-  
-  .pricing-table {
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .option-card {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 20px;
-    max-width: 300px;
-    background-color: #f9f9f9;
-  }
-  
-  .option-card h3 {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-  }
-  
-  .option-card .price {
-    font-size: 2em;
-    margin-bottom: 20px;
-  }
-  
-  .features-list {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 20px;
-  }
-  
-  .features-list li {
-    margin-bottom: 10px;
-  }
-  
-  .buy-button {
-    padding: 10px 20px;
-    background-color: #003366;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 1em;
-    cursor: pointer;
-  }
-  
-  .buy-button:hover {
-    background-color: #0056b3;
-  }
-  
-  /* src/components/BuyPage/FeaturesComparisonSection.css */
-  .features-comparison-section {
-    padding: 50px 20px;
-    text-align: center;
-  }
-  
-  .features-comparison-section h2 {
-    font-size: 2.5em;
-    margin-bottom: 40px;
-  }
-  
-  .comparison-table {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    border-collapse: collapse;
-  }
-  
-  .comparison-table th, .comparison-table td {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .buy-page {
     padding: 15px;
-    border: 1px solid #ddd;
-    text-align: center;
   }
-  
-  .comparison-table th {
-    background-color: #f1f1f1;
+}
+
+@media (max-width: 480px) {
+  .buy-page {
+    padding: 10px;
   }
-  
-  /* src/components/BuyPage/CustomerReviewsSection.css */
-  .customer-reviews-section {
-    padding: 50px 20px;
-    text-align: center;
+}
+/* src/components/BuyPage/ProductOptionsSection.css */
+.product-options-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.product-options-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.pricing-table {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.option-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 300px;
+  background-color: #f9f9f9;
+  flex: 1 1 250px;
+  box-sizing: border-box;
+}
+
+.option-card h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.option-card .price {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.features-list li {
+  margin-bottom: 10px;
+}
+
+.buy-button {
+  padding: 10px 20px;
+  background-color: #003366;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .product-options-section h2 {
+    font-size: 2em;
   }
-  
-  .customer-reviews-section h2 {
-    font-size: 2.5em;
-    margin-bottom: 40px;
+
+  .option-card {
+    max-width: 45%;
   }
-  
-  .review-carousel {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+}
+
+@media (max-width: 480px) {
+  .product-options-section {
+    padding: 30px 10px;
   }
-  
-  .review-card {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 20px;
-    max-width: 300px;
-    background-color: #f9f9f9;
-  }
-  
-  .review-card .customer-name {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .review-card .review-text {
-    font-size: 1em;
-    margin-bottom: 20px;
-  }
-  
-  .review-card .rating {
+
+  .product-options-section h2 {
     font-size: 1.5em;
-    color: #ffcc00;
   }
-  
-  /* src/components/BuyPage/PaymentSection.css */
-  .payment-section {
-    padding: 50px 20px;
-    text-align: center;
-    align-items: center;
-  }
-  
-  .payment-section h2 {
-    font-size: 2.5em;
-    margin-bottom: 40px;
-  }
-  
-  .payment-form {
-    display: flex;
+
+  .pricing-table {
     flex-direction: column;
     align-items: center;
-    justify-content: center;
   }
-  
-  .payment-form label {
-    margin-bottom: 15px;
-    font-weight: bold;
+
+  .option-card {
+    max-width: 100%;
+  }
+
+  .option-card .price {
+    font-size: 1.5em;
+  }
+
+  .buy-button {
     width: 100%;
-    max-width: 400px;
   }
-  
-  .payment-form input {
+}
+/* src/components/BuyPage/FeaturesComparisonSection.css */
+.features-comparison-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.features-comparison-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.comparison-table {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.comparison-table th, .comparison-table td {
+  padding: 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.comparison-table th {
+  background-color: #f1f1f1;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .features-comparison-section h2 {
+    font-size: 2em;
+  }
+
+  .comparison-table th, .comparison-table td {
     padding: 10px;
-    font-size: 1em;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 100%;
+    font-size: 0.9em;
   }
-  
-  .submit-button {
-    padding: 10px 20px;
-    background-color: #000;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 1em;
-    cursor: pointer;
-    margin-top: 20px;
-    justify-content: center;
+}
+
+@media (max-width: 480px) {
+  .features-comparison-section {
+    padding: 30px 10px;
+  }
+
+  .features-comparison-section h2 {
+    font-size: 1.5em;
+  }
+
+  .comparison-table {
+    font-size: 0.8em;
+  }
+
+  .comparison-table th, .comparison-table td {
+    padding: 8px;
+  }
+}
+/* src/components/BuyPage/CustomerReviewsSection.css */
+.customer-reviews-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.customer-reviews-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.review-carousel {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.review-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 300px;
+  background-color: #f9f9f9;
+  flex: 1 1 250px;
+  box-sizing: border-box;
+}
+
+.review-card .customer-name {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.review-card .review-text {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+.review-card .rating {
+  font-size: 1.5em;
+  color: #ffcc00;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .customer-reviews-section h2 {
+    font-size: 2em;
+  }
+
+  .review-card {
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .customer-reviews-section {
+    padding: 30px 10px;
+  }
+
+  .customer-reviews-section h2 {
+    font-size: 1.5em;
+  }
+
+  .review-carousel {
+    flex-direction: column;
     align-items: center;
-    text-align: center;
   }
-  
-  .submit-button:hover {
-    background-color: #0056b3;
+
+  .review-card {
+    max-width: 100%;
   }
-  
+
+  .review-card .rating {
+    font-size: 1.2em;
+  }
+}
