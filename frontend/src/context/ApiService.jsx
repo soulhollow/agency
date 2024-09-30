@@ -2,15 +2,26 @@ import axios from 'axios';
 
 class ApiService {
     constructor() {
-        const token = localStorage.getItem('token');  // Hole den Token aus dem localStorage
-
         this.apiClient = axios.create({
             baseURL: 'https://localhost:8443/api', 
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': token ? `Bearer ${token}` : '',  // Setze den Header, wenn ein Token vorhanden ist
             },
         });
+
+        // Interceptor zum Setzen des Authorization-Headers
+        this.apiClient.interceptors.request.use(
+            (config) => {
+                const token = localStorage.getItem('token');
+                if (token) {
+                    config.headers['Authorization'] = `Bearer ${token}`;  // Setze den Token
+                }
+                return config;
+            },
+            (error) => {
+                return Promise.reject(error);
+            }
+        );
     }
 
     // Product APIs
@@ -75,9 +86,9 @@ class ApiService {
     }
 
     // Order APIs
-    getOrdersByUserId() {
-        const userId = localStorage.getItem('userId'); // Beispielhaft, passe dies je nach deinem Auth-Flow an
-        return this.apiClient.get(`/orders/user/${userId}`);
+    getOrdersByToken() {
+        console.log('tst'); // Debugging-Ausgabe
+        return this.apiClient.get('/orderproducts/user');
     }
 
 

@@ -11,6 +11,7 @@ import RegisterPage from './components/RegisterPage/RegisterPage';
 import ProfilePage from './components/ProfilePage/ProfilePage';
 import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute';
 import Footer from './components/Footer/Footer';
+import CheckoutPage from "./components/CheckoutPage/CheckoutPage";
 
 function App() {
   return (
@@ -23,10 +24,8 @@ function App() {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<RegisterPage />} />
-        <Route
-          path="/profile"
-          element={<ProtectedRoute element={<ProfilePage />} />} 
-        />
+          <Route path="/checkout/:productId" element={<CheckoutPage />} />
+        <Route path="/profile"  element={<ProtectedRoute element={<ProfilePage />} />}/>
       </Routes>
       <Footer />
     </Router>
