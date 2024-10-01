@@ -76,6 +76,16 @@
   margin: 0;
 }
 
+/* Impressum und Datenschutz Links */
+.footer-bottom a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   .footer-content {

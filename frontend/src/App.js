@@ -12,7 +12,8 @@ import ProfilePage from './components/ProfilePage/ProfilePage';
 import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute';
 import Footer from './components/Footer/Footer';
 import CheckoutPage from "./components/CheckoutPage/CheckoutPage";
-import AuthContext from "./context/AuthContext";
+import ImpressumPage from './components/ImpressumPage/Impressum';
+import Datenschutz from "./components/DatenschutzPage/Datenschtz";
 
 function App() {
     return (
@@ -25,6 +26,8 @@ function App() {
                 <Route path="/contact" element={<ContactPage />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<RegisterPage />} />
+                <Route path="/impressum" element={<ImpressumPage />} />
+                <Route path="/datenschutz" element={<Datenschutz />} />
                 <Route path="/checkout/:productId" element={<CheckoutPage />} />
                 <Route
                     path="/profile"
