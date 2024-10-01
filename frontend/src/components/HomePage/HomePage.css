@@ -7,7 +7,7 @@
   margin: 0 auto;
   padding: 20px;
   box-sizing: border-box;
-  font-family: 'Arial, sans-serif';
+  font-family: 'Arial, sans-serif', serif;
   color: #333;
 }
 
@@ -23,7 +23,7 @@
 }
 
 .hero-content {
-  max-width: 600px;
+  max-width: 100%;
   text-align: center;
   flex: 1 1 100%;
 }
